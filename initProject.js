@@ -7,13 +7,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 'use strict';
 
-const Port = 8080;
+const PORT = 8080;
 const HOST = '0.0.0.0';
 
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 8080);
+//app.set('port', 8080);
 
 app.use(express.static("public"));
 
