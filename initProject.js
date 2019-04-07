@@ -5,11 +5,15 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+'use strict';
+
+const Port = 8080;
+const HOST = '0.0.0.0';
 
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3350);
+app.set('port', 8080);
 
 app.use(express.static("public"));
 
@@ -52,7 +56,10 @@ app.use(function(err, req, res, next){
   res.render('500');
   //there was some server error
 });
-
+/*
 app.listen(app.get('port'), function(){
   console.log('Express started on http://...:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
+*/
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);

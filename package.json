@@ -1,12 +1,12 @@
 {
-  "name": "cs290_project",
+  "name": "Nick's_personal_website",
   "version": "1.0.0",
   "description": "program will run server for personal website",
   "main": "initProject.js",
   "scripts": {
-    "test": "proj"
+    "start": "node initProject.js"
   },
-  "author": "Nick Stapler",
+  "author": "Nick Stapler <staplern@oregonstate.edu>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
