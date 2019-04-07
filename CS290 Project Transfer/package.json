@@ -1,0 +1,16 @@
+{
+  "name": "cs290_project",
+  "version": "1.0.0",
+  "description": "program will run server for personal website",
+  "main": "initProject.js",
+  "scripts": {
+    "test": "proj"
+  },
+  "author": "Nick Stapler",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  }
+}
